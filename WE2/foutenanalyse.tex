@@ -1,32 +1,57 @@
 \section{Foutenanalyse}
 \subsection{Systematische fouten}
 \subsubsection{Rechtstreekse grootheden}
-\textbf{Ampere meter}\\
 De ampere meter is een analoog toestel waardoor de afleesfout gelijk is aan de helft van de kleinste schaalverdeling:
 $$\pm\frac{1}{2}\cdot 2=1$$ De instrumentale fout staat vermeld op de amperemeter en is gelijk aan $0.5\% \cdot meetmereik$:
 $$0,5\% \cdot 60 \cdot 2 = 0,6$$ Dit wil zeggen dat de absolute accuratie gelijk is aan$\pm 1,6$\\
 
 
-\noindent Op de digitate vermogenmeter is de afleesfout gelijk aan
-$\pm 0,1$.
+\noindent Bij de digitate vermogenmeter is de afleesfout bij 10,20,30 Volt 
+$\pm 1$ en bij 70V is deze gelijk aan $\pm 10$.
 De instrumentale fout is gegeven door de fabrikant en gelijk aan $3\% + 2$\\
+De absolute accuratie is hier berekend in de excel.\\
+
+\noindent Op de digitale voltmeter is een afleesfout $\pm 0,1$ en de instrumentale fout gegegeven door de 
+fabrikant gelijk aan $0,09\% + 2$\\
+De absolute accuratie is hier ook automatisch berekend in de excel.\\
+
+\noindent Op de RPM-meter is een afleesfout van $\pm 1$ en een instrumentale fout door de fabrikant van 
+$0,05\% \cdot10000$. Dit is een percentage van het meetbereik.\\
+
+\noindent Idem bij de koppelmeter is de afleesfout $\pm 1$ en de instrumentale fout van $0,05\% \cdot 500$.
+Het meetbereik is hier normaalgezien van -500 tot 500, maar omdatdat we niet negatief mogen gaan in onze 
+koppelmeting, nemen we een een meetbereik van 500.\\
+
+\subsubsection{Onrechtstreekse grootheden}
+De onrechtstreekse fout is gelijk aan:
+\begin{equation}
+    \Delta P = \left| \frac{\partial P}{\partial I}\right| \Delta I + \left| \frac{\partial P}{\partial U}\right| \Delta U
+\end{equation}
+\begin{equation*}
+    \Delta P = U \cdot \Delta  I + I \cdot \Delta U
+\end{equation*}
+    
+
 
 
 
 
 \subsection{Toevallige fouten}
-\textbf{Rechtstreekse grootheden}\\
+\subsubsection{Rechtstreekse grootheden}
 De $U_1,I_1,M,n$ en $P_{el2}$ werden rechtstreeks gemeten. De toevallige fouten
 op deze grootheden werden berekend aan de hand van de volgende formule: 
 \begin{equation}
     \sigma=\sqrt{\frac{\sum\limits_{i=0}^n(x_i-m)^2}{n-1}}  
 \end{equation}
 
-\noindent \textbf{Onrechtstreekse grootheden}\\
+\subsubsection{Onrechtstreekse grootheden}
 De onrechtstreekse grootheden in dit practica zijn $P_{el1},P_{mech},\eta_{1}$ en
 $\eta_2$.\\
 Volgende formules werden gebruikt om de toevallige fouten te bepalen:\\
 \begin{equation}
     \sigma^2\{R\}=\sum\limits_{i=0}^n\left(\frac{\partial \Psi}{\partial X_i}\right)_0^2 \sigma ^2 \{X_i\}
 \end{equation}
+\begin{equation*}
+    \sigma^2\{R\}=U^2 \cdot \sigma ^2 \{I\} + I^2 \cdot \sigma ^2 \{U\}
+\end{equation*}
 
