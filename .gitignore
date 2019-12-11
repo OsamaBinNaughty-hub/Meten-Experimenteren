@@ -4,3 +4,7 @@
 *.fls
 *.aux
 *.fdb_latexmk
+*.toc
+*.bbl
+*.blg
+*.lot
