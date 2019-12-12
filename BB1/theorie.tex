@@ -17,6 +17,9 @@ De laag $z = z_{0}$ heeft de snelheid $v_{0}$ de snelheid nul heeft. De snelheid
 vloeistoflagen daartussenin verandert lineair in functie van de hoogte z.
 \\
 
+$v = v_{0} \cdot \frac{z}{z_{0}}$ of $\frac{\delta v}{\delta z} = \frac{v_{0}}{z_{0}}$
+\\
+
 In het algemeen neemt de snelheid echter niet lineair toe met de dikte an de vloeistoflaag. 
 De evenredigheidsconstante is ook afhankelijk van de aard van het flu\"idum, en wordt de
 \textbf{viscositeitsco\"effici\"ent} genoemd. We bekomen de formule:
@@ -52,4 +55,47 @@ $$v(r) = \frac{\pi(p_{1}-p_{2}) \cdot R^4}{4 \cdot L \cdot \eta}$$
 Het volumedebiet Q is het volume vloeistof dat per seconde door de buis stroomt.
 Dit is te berekenen door die vergelijking over de doorsnede van de buis te integreren. 
 Dit geeft: 
+\\
 
+$$\int_0^R2 \pi rdr \cdot v(r) = \frac{\pi(p_{1} - p_{2})\cdot R^4}{4 \cdot L \cdot \eta} $$
+\\
+
+Volgens de \textbf{wet van Poiseuille} is het debiet Q recht evenredig met het 
+drukverschil $\delta p$ in het laminair regime. In een grafiek van Q in functie
+van $\delta p$ geeft dit een rechte door de oorsprong; de richtingsco\"effici\"ent van de rechte is gelijk aan $\pi R^4 / 8\eta L$.
+\\
+
+\textbf{HIER KOMT AFBEELDING VAN ANDREAS}
+\\
+
+\subsection{Overgang van laminair naar turbulent regime}
+
+Als de snelheid echter te groot wordt, zal het laminair regime plaatsmaken voor een turbulent regime. 
+Dit turbulente regime wordt gekenmerkt door wervelingen of draaikolkjes. Het hoogste
+debiet waarbij de stroming nog juist stabiel laminair is, wordt het kritische debiet
+$Q_{krit}$ genoemd.
+\\
+
+\textbf{HIER KOMT AFBEELDING}
+\\
+
+\textit{Figuur 3: Laminair en turbulent regime}
+\\
+
+Het is moeilijk om theoretisch te voorspellen bij welke stroomsnelheden laminaire
+stroming zal overgaan in tubulente stroming. In dit kader speelt het 
+\textbf{Reynoldgetal} een belangrijke rol.
+\\
+
+\subsection{Het Reynoldgetal}
+De genormaliseerde gemiddelde stroomsnelheid $v/v_{0}$ wordt het Reynoldgetal genoemd:
+\\
+
+$$N_{R} = \frac{v \cdot \rho \cdot D}{\eta}$$
+\\
+
+Deze definitie geldt enkel voor een horizontale, cilindrische buis.
+Voor andere systemen gelden andere definities.
+\\
+
+Het maximale Reynoldgetal waarbij de stroming nog juist stabiel is is ca. 2000.
