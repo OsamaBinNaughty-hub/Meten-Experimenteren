@@ -1,1 +1,26 @@
-\section{Berekening en foutenanalyse viscociteitsconstante $\eta$}
+\section{Berekening en fout op viscociteitsconstante $\eta$}
+
+De viscociteitsconstante in het laminaire regime is te berekenen met de formule van Hagen-Poiseuille:
+\begin{equation}
+    Q = \frac{\pi \cdot \Delta P \cdot R^2}{8 \cdot L \cdot \eta}
+\end{equation}
+Deze formule is van de vorm $$y=a\cdot x$$ met de rico $a$ gelijk aan: $$a = \frac{\pi \cdot R^2}{8 \cdot L \cdot \eta}$$
+Uit deze formule is $\eta$ te berekenen.\\
+
+Deze $\eta$ zullen we bepalen door een lineaire regressie toe te passen op de gemeten waarden van de laminaire regime.
+We zitten ook in het geval van gelijkwaardige y-waarden.\\
+
+Voor de lineaire regressie heb je het principe der kleinste kwadraten dat vereist
+dat de $\chi ^2$-vorm minimaal is: 
+\begin{equation}
+    \chi ^2 = \sum\limits_{i=1}^n(y_i-a\cdot x_i)^2
+
+    \chi ^2 = 
+\end{equation}
+De beste schatting voor rico $a$ wordt dus gegeven door:
+\begin{equation}
+    a \hat{=} \frac{\sum\limits_{i=0}^n x_i  y_i}{\sum\limits_{i=0}^n x_i^2}
+\end{equation}
+
+
+
