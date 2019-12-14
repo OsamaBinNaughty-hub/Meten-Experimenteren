@@ -65,19 +65,39 @@ De toevallige fouten op $m$ en $\Delta t$ werden bepaald op basis van volgende f
 
 \subsection{Onrechtstreekse grootheden}
 
-We berekenen het debiet $Q$ aan de hand van formule \eqref{eq:hagen}. Daarom is dit een onrechtstreeks gemeten grootheid.
-De druk $\Delta p$ wordt onrechtstreeks bepaald aan de hand de massadichtheid $\rho$, de gravitatieconstante $g$ en het hoogteverschil $\Delta h$. Omdat $g$ en $\rho$ constante waardes zijn en $\Delta h$ een relatieve meting is, is de toevallige fout op deze grootheid gelijk aan nul.
 Te bespreken grootheden:
 \begin{itemize}
     \item Debiet $Q$
     \item Het drukverschil $\Delta p$
 \end{itemize}
 
+We berekenen het debiet $Q$ aan de hand van: 
+\begin{equation}
+\label{debiet Q adhv rho, m en t}
+    Q = \frac{\Delta m}{\rho \cdot \Delta t}
+\end{equation}
+
+Daarom is dit een onrechtstreeks gemeten grootheid.
+De druk $\Delta p$ wordt onrechtstreeks bepaald aan de hand de massadichtheid $\rho$, de gravitatieconstante $g$ en het hoogteverschil $\Delta h$. Omdat $g$ en $\rho$ constante waardes zijn en $\Delta h$ een relatieve meting is, is de toevallige fout op deze grootheid gelijk aan nul.
+
+
 \subsubsection{Systematische fouten}
 De systematische fout op $Q$ wordt berekend aan de hand van:
 \begin{equation}
-    \Delta Y = \sum\limits_{i=1}^n \left|\frac{\partial \Psi}{\partial x_i}\right|_o \cdot \Delta x_i
+    \Delta Y = \sum\limits_{i=1}^n \left|\frac{\partial \Psi}{\partial x_i}\right|_o \cdot \Delta x_i 
+\end{equation}
+Als men dit toepast op de formule $Q = \frac{\Delta m}{\rho \cdot \Delta t}$ verkrijgt men:
+
+\begin{equation}
+    \Delta Q = \left|\frac{\partial Q}{\partial m}\right|\cdot \Delta m + \left| \frac{\partial Q}{\partial \Delta t}\right| \cdot \Delta t
 \end{equation}
 
+\begin{equation}
+    \Delta Q = \left|\frac{1}{\rho \cdot \Delta t}\right|\Delta m + \left|\frac{\Delta m}{\rho \cdot \Delta t^{2}}\right|\cdot \Delta t
+\end{equation}
+
+
 \subsubsection{Toevallige fouten}
+
+
 
