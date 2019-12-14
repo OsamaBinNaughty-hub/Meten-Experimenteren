@@ -86,7 +86,7 @@ De systematische fout op $Q$ wordt berekend aan de hand van:
 \begin{equation}
     \Delta Y = \sum\limits_{i=1}^n \left|\frac{\partial \Psi}{\partial x_i}\right|_o \cdot \Delta x_i 
 \end{equation}
-Als men dit toepast op de formule $Q = \frac{\Delta m}{\rho \cdot \Delta t}$ verkrijgt men:
+Als men dit toepast op \eqref{debiet Q adhv rho, m en t} verkrijgt men:
 
 \begin{equation}
     \Delta Q = \left|\frac{\partial Q}{\partial m}\right|\cdot \Delta m + \left| \frac{\partial Q}{\partial \Delta t}\right| \cdot \Delta t
@@ -98,6 +98,20 @@ Als men dit toepast op de formule $Q = \frac{\Delta m}{\rho \cdot \Delta t}$ ver
 
 
 \subsubsection{Toevallige fouten}
+De toevallige fout op $Q$ is gelijk aan:
+\begin{equation}
+    \sigma^{2} \hat = \sum\limits_{i=1}^n(\frac{\partial \Psi}{\partial x_i})^{2} \cdot \sigma^{2} \{x_i\}
+\end{equation}
+
+In ons geval (gebruik makende van formule \eqref{debiet Q adhv rho, m en t}):
+\begin{equation}
+    \sigma^{2}\{Q\} \hat = (\frac{\partial Q}{\partial m})^{2} \cdot \sigma^{2}\{m\} + (\frac{\partial Q}{\partial \Delta t})^{2} \cdot \sigma^{2}\{\Delta t\}
+\end{equation}
+\begin{equation}
+\sigma^{2}\{Q\} = (\frac{1}{\rho \cdot \Delta t})^{2} \cdot \sigma^{2}\{m\} + (\frac{\Delta m}{\rho \cdot \Delta t^{2}})^{2} \cdot \sigma^{2}\{\Delta t\}
+\end{equation}
+
+
 
 
 
