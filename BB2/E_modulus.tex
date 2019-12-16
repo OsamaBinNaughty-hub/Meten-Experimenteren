@@ -1,0 +1,58 @@
+\section{Bepaling E modulus}
+
+We meten op analoge manier het rekstrookje uit.
+Dit is bij $R_a$ en $R_b$ gelijk aan $10\Omega$. 
+Men bekomt dan de waarden in tabel \ref{tab:rekstrookje}.
+
+\begin{table}[h]
+    \centering
+    \caption{Meetresultaten rekstrookje}
+    \label{tab:rekstrookje}
+
+    \begin{tabular}{| c | c | c | c | c |}
+        \hline
+        Kracht [N] & Rmin [$\Omega$]   & Rmax [$\Omega$]   & Imin [mA] & Imax [mA] \\ \hline
+        0,981      & 130               & 120               & -0,041    & 0,003 \\ \hline
+        1,962      & 130               & 120               &-0,047     & 0,003 \\ \hline
+        2,943      & 130               & 120               &-0,04      & 0,004 \\ \hline
+        3,924      & 130               & 120               &-0,04      & 0,004 \\ \hline
+        4,905      & 130               & 120               &-0,039     & 0,004 \\ \hline
+        5,886      & 130               & 120               &-0,039     & 0,004 \\ \hline
+        6,867      & 130               & 120               &-0,038     & 0,005 \\ \hline
+    \end{tabular}
+\end{table}
+
+Na interpolatie volgens volgende formule:
+
+\begin{equation}
+    R = R_{min} - \frac{\Delta R}{\Delta I} \cdot I_{min}
+\end{equation}
+
+
+bekomt men R. Met deze waarde wordt het mogelijk om $R_{x}$ te
+berekenen via een schaalfactor 1 bepaald door $R_{a}$ en $R_{b}$.
+\\
+
+$\Delta R_{x}$ wordt dan weer bepaald door het verschil met de
+nominale waarde van het rekstrookje (waarde van de weerstand
+bij evenwicht, ongeveer $120\Omega$)
+\\
+
+Bekomt men de waarden uit tabel \ref{tab:interpol_rekstrookje}
+
+\begin{table}[h]
+    \centering
+    \caption{Interpolatie rekstrookje}
+    \label{tab:interpol_rekstrookje}
+    \begin{tabular}{| c | c | c | c |}
+        \hline
+        R [$\Omega$]    & Rx [$\Omega$] & $\Delta R_{x}$    & $\frac{\Delta R_{x}}{R_{x}}$ \\ \hline
+        120,682         & 120,682       & 0,682             & 0,005650 \\ \hline
+        120,600         & 120,600       & 0,600             & 0,004975 \\ \hline
+        120,909         & 120,909       & 0,909             & 0,007519 \\ \hline
+        120,909         & 120,909       & 0,909             & 0,007519 \\ \hline
+        120,930         & 120,930       & 0,930             & 0,007692 \\ \hline
+        120,930         & 120,930       & 0,930             & 0,007692 \\ \hline
+        121,163         & 121,163       & 1,163             & 0,009597 \\ \hline
+    \end{tabular}
+\end{table}
