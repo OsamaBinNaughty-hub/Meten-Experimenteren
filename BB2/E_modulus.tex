@@ -22,7 +22,14 @@ men bekomt dan de waarden in tabel \ref{tab:rekstrookje}.
     \end{tabular}
 \end{table}
 
-Na interpolatie volgens volgende formule:
+\begin{figure}[h]
+    \centering
+    \caption{Lineaire interpolatie}
+    \label{fig:lin_interpol_e}
+    \includegraphics[width=0.7\textwidth]{img/tweede.png}
+\end{figure}
+
+Na interpolatie [\ref{fig:lin_interpol_e}] volgens volgende formule:
 
 \begin{equation}
     R = R_{min} - \frac{\Delta R}{\Delta I} \cdot I_{min}
@@ -60,7 +67,14 @@ Nu kan men een lineaire regressie uitvoeren met als x-waarden
 de krachten uitgeoefend op het balkje en als y-waarden
 $\frac{\Delta R_{x}}{R_{x}}$.
 
-Met de lineaire regressie functie in excel kan men nu de
+\begin{figure}[h]
+    \centering
+    \caption{Lineaire regressie $E$}
+    \label{fig:lin_reg_E}
+    \includegraphics[width=0.7\textwidth]{img/grafiek.png}
+\end{figure}
+
+Met de lineaire regressie [\ref{fig:lin_reg_E}] functie in excel kan men nu de
 richtingsco\"effici\"ent bepalen. Deze zal van volgende vorm
 zijn:
 
@@ -95,3 +109,12 @@ Kan men nu $E$ en de fout hierop berekenen:
 \begin{equation}
     E = 9,964E+09 \pm 4,7E+07
 \end{equation}
+
+\subsection{Bespreking resultaten}
+
+Hoewel men hier een waarde uikomt ziet men dat de proeven
+niet al te accuraat werden uitgevoerd. Dit kan liggen aan
+de materiaalpech die men ervaarde tijdens het practicum. Ook
+tijdstekort bezorgde extra druk waardoor er
+onnauwkeurigheden gemakkelijk konden insluipen.
+
