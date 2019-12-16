@@ -1,0 +1,24 @@
+\section{Bepaling Gevoeligheid $Z$}
+Als eerste opdracht bepalen we de gevoeligheid $Z$ van de brug in functie van alle 9 mogelijke combinaties
+van de weerstanden $R_A$ en $zR_B$. We veronderstellen hiervoor deze waarden:
+\begin{itemize}
+    \item $U = 1 V$
+    \item $R_X = 120 \Omega$
+    \item $R_g = 100 \Omega$ voor de 2 eerste gevallen ($1000 \Omega$ voor de andere 2)
+    \item $\Delta I = 10^{-7}$
+\end{itemize}
+Voor de Wheatstone brug type A gebruiken we de volgende formule:
+\begin{equation}
+    Z = U \cdot \frac{R_A}{R_A + R_B} \cdot \frac{1}{R_x + R_A + R_g + \frac{R_A}{R_B}\cdot R_g}
+\end{equation}
+Voor type A verwisselen we $R$ en $R_A$ van plaats in de formule:
+\begin{equation}
+    Z = U \cdot \frac{R}{R + R_B} \cdot \frac{1}{R_x + R + R_g + \frac{R}{R_B}\cdot R_g}
+\end{equation}
+Verder berekenen we tevens:
+\begin{itemize}
+    \item Evenwichtsvoorwaarde voor de instelbare weerstand $R$
+    \item Kleinste verandering $\Delta R$ van $R$ om de brug in evenwicht te brengen
+    \item Overeenstemmende kleinst mogelijk detecteerbare variatie $\Delta R_x$ van de te meten $R_x$ 
+    \item Stroom door $R_A$ en $R_B$ bij evenwicht van de brug
+\end{itemize}
