@@ -1,21 +1,32 @@
 \section{Methode}
 
 Om de apparatuur in het labo niet te vernietigen, maakt men
-eerst een theoretische analyse met fictieve waarden en 
-perfecte eiking. Eens men dit heeft kan men voor de apparatuur
+eerst een theoretische analyse met fictieve waarden en een 
+perfecte ijking. Eens men dit heeft kan men voor de apparatuur
 gevaarlijke waarden dus vermijden.
 \\ \\
 Als tweede stap gaat men de gevoeligheid van de gemaakte brug
 van Wheatstone testen door een gekende weerstand nauwkeurig uit
 te meten. Men kiest hiervoor een onbekende weerstand van
 ongeveer $120 \Omega$. Verder zijn dit de volgende parameters
+(men zal deze later nog uitdiepen):
 
 % TODO: Dit moet eens nagekeken worden
-\begin{tabular}{| c | c | c |}
-    \hline
-    Grootheid       & Waarde    & Fout \\ \hline
-    U [V]           & 1,518     & 10mV \\ \hline
-    Rx [$\Omega$]   & 120       &      \\ \hline
-    Rg [$\Omega$]   & 100       & 10000000 \\ \hline
-    $\Delta l$ [A]  & 1E-07     &      \\ \hline
-\end{tabular}
+\begin{table}[h]
+    \caption{Omgevingswaarden van de proef}
+    \label{tab:omgevingswaarden}
+    \centering
+    \begin{tabular}{| c | c | c |}
+        \hline
+        Grootheid       & Waarde    & Fout \\ \hline
+        U [V]           & 1,518     & 10mV \\ \hline
+        Rx [$\Omega$]   & 120       &      \\ \hline
+        Rg [$\Omega$]   & 100       & 1E-7 \\ \hline
+        $\Delta l$ [A]  & 1E-07     &      \\ \hline
+    \end{tabular}
+\end{table}
+
+Als derde en laatste stap zal men de elasticiteit berekenen van
+een balkje aan de hand van een rekstrookje en de gemaakte brug
+uit voorgaande stap. De reden waarom men voor deze kiest zal
+verder worden besproken.
