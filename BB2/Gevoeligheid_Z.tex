@@ -162,3 +162,29 @@ $Z$
 
 Hoe groter $R_g$ hoe kleiner $Z$
 
+\subsection{Aftoetsing theoretische waarden}
+
+Men gaat de waarden aftoetsen door de Wheatstone brug uit te
+meten met een gekende $R_x$ ($120\Omega$). Men kan hier de resultaten van
+terugvinden in tabel \ref{tab:aftoets_theorie}.
+\\ \\
+De methode uitgelegd om de interpolatie te doen wordt later
+uitgelegd.
+\\ \\
+Men ziet dus dat de theorie juist is.
+
+\begin{table}
+    \centering
+    \caption{Metingen met gekende $R_x$}
+    \label{tab:aftoets_theorie}
+    \begin{tabular}{| c | c | c | c | c | c | c | c |}
+        \hline
+        Ra [$\Omega$]	& Rb [$\Omega$] & Rmin [$\Omega$]   & Rmax [$\Omega$]   & Imin [mA] & Imax [mA] & R & Rx \\ \hline
+        10,0            & 100,          & 1300              & 1200              & -0,003    & 0,040     & 1293,0230 & 129,3023256 \\ \hline
+        10,0            & 10,0          & 130,              & 120,              & -0,115    & 0,120     & 0125,1064 & 125,1063830 \\ \hline
+        1000            & 1000          & 130,              & 120,              & -0,042    & 0,003     & 0120,6667 & 120,6666667 \\ \hline
+        100,            & 100,          & 130,              & 120,              & -0,120    & 0,009     & 0120,6977 & 120,6976744 \\ \hline
+        100,            & 1000          & 1300              & 1200              & -0,028    & 0,002     & 1206,6670 & 120,6666667 \\ \hline
+    \end{tabular}
+\end{table}
+
